@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animated Image Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Animated Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Nature 1">
+    <img src="https://picsum.photos/id/1016/600/400" alt="Nature 2">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Nature 3">
+    <img src="https://picsum.photos/id/1024/600/400" alt="Nature 4">
+    <img src="https://picsum.photos/id/1021/600/400" alt="Nature 5">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Nature 6">
+  </div>
+
+</body>
+</html>
